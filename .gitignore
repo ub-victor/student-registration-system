@@ -1,0 +1,24 @@
+# Maven / Gradle
+/target/
+/build/
+/.gradle/
+
+# IDE files
+/.idea/
+/.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Spring Boot
+application-*.properties
+!application.properties
