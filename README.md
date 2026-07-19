@@ -285,4 +285,3 @@ Run a single test class:
 ## Summary
 
 This project is more than a basic CRUD application. It is an academic domain model meant to support real registration workflows, strong data integrity, and future API expansion. The best way to validate it is to combine smoke tests, unit tests, repository tests, integration tests, and end-to-end workflow tests.
-
