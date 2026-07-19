@@ -117,41 +117,73 @@ Before running the application locally, make sure you have:
 - PostgreSQL installed and running
 - A database created for the project
 
-## Setup Instructions
+## How to Run the Project
 
-### 1. Clone the Repository
+### 1. Prerequisites
+
+Make sure the following are installed and available on your machine:
+
+- Java 21
+- Maven
+- PostgreSQL
+- A running PostgreSQL service
+
+### 2. Open the Project Folder
 
 ```bash
-git clone <repository-url>
-cd StudentRegistrationSystem
+cd /home/victoire/Desktop/My-Project/StudentRegistrationSystem/student-registration-system
 ```
 
-### 2. Create a PostgreSQL Database
+### 3. Create the Database
 
-Create a database such as:
+The application is currently configured to use a PostgreSQL database named `StudentRegistrationSystem`.
+
+If PostgreSQL is installed locally, create the database with:
 
 ```sql
-CREATE DATABASE studentregistrationdb;
+CREATE DATABASE "StudentRegistrationSystem";
 ```
 
-### 3. Configure the Application
-
-Update the database settings in the Spring configuration file:
+You can also verify the connection details in the configuration file:
 
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/studentregistrationdb
-spring.datasource.username=your_username
-spring.datasource.password=your_password
+spring.datasource.url=jdbc:postgresql://localhost:5432/StudentRegistrationSystem
+spring.datasource.username=postgres
+spring.datasource.password=Ushindi@123!
 ```
+
+> If your local PostgreSQL credentials differ, update the values in [student-registration-system/src/main/resources/application.properties](student-registration-system/src/main/resources/application.properties).
 
 ### 4. Run the Application
 
+Start the Spring Boot application with:
+
 ```bash
-cd student-registration-system
 ./mvnw spring-boot:run
 ```
 
-The application should start on port 8080 unless you change the configuration.
+Once the app starts successfully, it will run on:
+
+```text
+http://localhost:8080
+```
+
+### 5. Run the Tests
+
+To verify the project builds and the Spring context loads properly:
+
+```bash
+./mvnw test
+```
+
+### 6. Common Troubleshooting
+
+If the application cannot connect to the database:
+
+- confirm PostgreSQL is running
+- confirm the database exists
+- confirm the username and password in the properties file are correct
+- ensure the PostgreSQL port is available on `localhost:5432`
 
 ## How the Project Can Be Tested
 
