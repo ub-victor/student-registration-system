@@ -1,0 +1,118 @@
+{
+  "info": {
+    "name": "Student Registration System - Academic Units",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Faculty",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"code\": \"ENG\",\n  \"name\": \"Faculty of Engineering\",\n  \"type\": \"FACULTY\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/academic-units",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "academic-units"]
+        }
+      }
+    },
+    {
+      "name": "Create Programme",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"code\": \"CS\",\n  \"name\": \"Computer Science Programme\",\n  \"type\": \"PROGRAM\",\n  \"parentCode\": \"ENG\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/academic-units",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "academic-units"]
+        }
+      }
+    },
+    {
+      "name": "Create Department",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"code\": \"SE\",\n  \"name\": \"Software Engineering Department\",\n  \"type\": \"DEPARTMENT\",\n  \"parentCode\": \"CS\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/academic-units",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "academic-units"]
+        }
+      }
+    },
+    {
+      "name": "Create Programme with PROGRAMME Alias",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"code\": \"MATH\",\n  \"name\": \"Mathematics Programme\",\n  \"type\": \"PROGRAMME\",\n  \"parentCode\": \"ENG\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/academic-units",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "academic-units"]
+        }
+      }
+    },
+    {
+      "name": "Reject Department Without Programme Parent",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"code\": \"INVALID\",\n  \"name\": \"Invalid Department\",\n  \"type\": \"DEPARTMENT\",\n  \"parentCode\": \"ENG\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/academic-units",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "academic-units"]
+        }
+      }
+    }
+  ]
+}
