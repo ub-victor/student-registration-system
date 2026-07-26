@@ -169,7 +169,7 @@ class AcademicUnitServiceTest {
         }
 
         @Override
-        public AcademicUnit save(AcademicUnit academicUnit) {
+        public <S extends AcademicUnit> S save(S academicUnit) {
             unitsByCode.put(academicUnit.getCode(), academicUnit);
             return academicUnit;
         }
@@ -225,7 +225,14 @@ class AcademicUnitServiceTest {
 
         @Override
         public Optional<AcademicUnit> findById(Long id) {
+            // this in-memory repo is keyed by code; we don't support lookup by id in tests
             return Optional.empty();
+        }
+
+        @Override
+        public AcademicUnit getById(Long id) {
+            // Not supported in the in-memory test repository; return null
+            return null;
         }
 
         @Override
@@ -296,7 +303,9 @@ class AcademicUnitServiceTest {
 
         @Override
         public Page<AcademicUnit> findAll(Pageable pageable) {
-            return new PageImpl<>(findAll(), pageable);
+            List<AcademicUnit> all = findAll();
+            int total = all.size();
+            return new PageImpl<>(all, pageable, total);
         }
     }
 }
