@@ -5,7 +5,6 @@
 
 # IDE files
 /.idea/
-/.vscode/
 *.iml
 
 # OS files
@@ -22,3 +21,7 @@ Thumbs.db
 # Spring Boot
 application-*.properties
 !application.properties
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore

@@ -2,7 +2,7 @@ com/auca/student_registration_system/entity/AcademicUnit$AcademicUnitBuilder.cla
 com/auca/student_registration_system/StudentRegistrationSystemApplication.class
 com/auca/student_registration_system/repository/AcademicUnitRepository.class
 com/auca/student_registration_system/service/AcademicUnitRequest.class
-com/auca/student_registration_system/service/AcademicUnitService.class
 com/auca/student_registration_system/entity/AcademicUnit.class
 com/auca/student_registration_system/service/AcademicUnitResponse.class
 com/auca/student_registration_system/constants/EAcademicUnitType.class
+com/auca/student_registration_system/service/AcademicUnitService.class

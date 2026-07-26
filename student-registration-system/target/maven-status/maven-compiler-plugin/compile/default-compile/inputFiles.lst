@@ -1,7 +1,13 @@
 /home/victoire/Desktop/My-Project/StudentRegistrationSystem/student-registration-system/src/main/java/com/auca/student_registration_system/StudentRegistrationSystemApplication.java
 /home/victoire/Desktop/My-Project/StudentRegistrationSystem/student-registration-system/src/main/java/com/auca/student_registration_system/constants/EAcademicUnitType.java
+/home/victoire/Desktop/My-Project/StudentRegistrationSystem/student-registration-system/src/main/java/com/auca/student_registration_system/controller/StudentController.java
 /home/victoire/Desktop/My-Project/StudentRegistrationSystem/student-registration-system/src/main/java/com/auca/student_registration_system/entity/AcademicUnit.java
+/home/victoire/Desktop/My-Project/StudentRegistrationSystem/student-registration-system/src/main/java/com/auca/student_registration_system/entity/Student.java
 /home/victoire/Desktop/My-Project/StudentRegistrationSystem/student-registration-system/src/main/java/com/auca/student_registration_system/repository/AcademicUnitRepository.java
+/home/victoire/Desktop/My-Project/StudentRegistrationSystem/student-registration-system/src/main/java/com/auca/student_registration_system/repository/StudentRepository.java
 /home/victoire/Desktop/My-Project/StudentRegistrationSystem/student-registration-system/src/main/java/com/auca/student_registration_system/service/AcademicUnitRequest.java
 /home/victoire/Desktop/My-Project/StudentRegistrationSystem/student-registration-system/src/main/java/com/auca/student_registration_system/service/AcademicUnitResponse.java
 /home/victoire/Desktop/My-Project/StudentRegistrationSystem/student-registration-system/src/main/java/com/auca/student_registration_system/service/AcademicUnitService.java
+/home/victoire/Desktop/My-Project/StudentRegistrationSystem/student-registration-system/src/main/java/com/auca/student_registration_system/service/StudentRequest.java
+/home/victoire/Desktop/My-Project/StudentRegistrationSystem/student-registration-system/src/main/java/com/auca/student_registration_system/service/StudentResponse.java
+/home/victoire/Desktop/My-Project/StudentRegistrationSystem/student-registration-system/src/main/java/com/auca/student_registration_system/service/StudentService.java
